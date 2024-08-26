@@ -1,0 +1,1032 @@
+
+/* ====================Global======================= */
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+::selection
+{
+    background-color: rgb(221,89,89);
+    color: white;
+}
+
+:root
+{
+    --main-color : rgb(206,18,18);
+    --second-color : rgb(33, 37, 41);
+}
+
+.container
+{
+    width: 85%;
+    margin: auto;
+    height: 100%;
+}
+a
+{
+    text-decoration: none;
+}
+
+.amatic
+{
+    font-family: "Amatic SC", sans-serif;
+}
+
+.inter
+{
+    font-family: "Inter", sans-serif;
+
+}
+
+.openSans
+{
+    font-family: "Open Sans", sans-serif;
+
+}
+
+/* ======================= End of Global =========================*/
+
+/* =======================================start of Narbar section=====================*/
+nav
+{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top  :0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 999999;
+
+}
+nav .container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .container .close
+{
+    display: none;
+}
+
+
+nav .container h2
+{
+    color: var(--second-color);
+    font-size:30px ;
+    font-weight: 700;
+    position: relative;
+}
+
+nav .container .fa-bars
+{
+    display: none;
+}
+nav .container h2::after
+{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    bottom: 25%;
+    left  :103%
+    
+}
+
+
+
+nav .container .ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+nav .container .ul li
+{
+    margin: 20px 20px;
+}
+
+nav .container .ul li a
+{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: gray;
+    position: relative;
+}
+nav .container .ul li a::after
+{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 110%;
+    left: 0;
+    transition: all 0.4s;
+}
+
+nav .container .ul li:hover a::after
+{
+    width: 100%;
+}
+nav .container .ul li:hover a
+{
+    color: black;
+}
+
+nav .container i
+{
+    font-size: 25px;
+    color: var(--second-color);
+    margin: 30px 0px;
+}
+
+/*======================== End of nav section======================= */
+
+/* ========================Start of header section ==========================*/
+
+.header
+{
+    background-color: rgb(238,238,238);
+    padding: 100px;
+}
+
+.header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container .caption
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+.header .container .caption h2
+{
+    font-weight: 700;
+    font-size: 65px;
+    color: var(--second-color);
+}
+
+.header .container .caption .btns
+{
+    display: flex;
+}
+
+.header .container .caption .btns .btn2
+{
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right , #ce1212 0 50% , white 50% 100% );
+    margin-right: 15px;
+}
+
+.header .container .caption .btns .btn2  i
+{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container .caption .btns .book
+{
+    color: var(--second-color);
+    padding: 15px 20px;
+    background-color: var(--main-color);
+    border-radius: 0 25px 25px 25px;
+    margin-right: 20px;
+    color: white;
+    transition: all 0.3s;
+    
+}
+
+.header .container .caption .btns .book:hover
+{
+    background-color: red;
+}
+
+.header .container .caption .btns .youtube
+{
+    color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--second-color);
+    transition: all 0.3s;
+}
+
+.header .container .caption .btns .youtube:hover
+{
+    color: var(--main-color);
+}
+
+
+.header .container .image
+{
+    width: 40%;
+}
+
+.header .container .image img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* ==========================End of header section========================*/
+
+/*===========================Start of Chefs section===========================*/
+
+
+.chefs .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.chefs .container .cards
+{
+    display: flex;
+}
+
+.chefs .container h5
+{
+    text-align: center;
+    margin: 10px 0;
+    margin-top: 80px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(127, 127, 144);
+}
+
+.chefs .container h3
+{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(33, 37, 41)  ;
+}
+
+.chefs .container h3 span
+{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--main-color)  ;
+}
+
+.chefs .container .cards .one-card
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+    transition: all 0.5s;
+    position: relative;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+
+}
+
+.chefs .container .cards .one-card h3
+{
+    font-weight: 700;
+    color: black;
+}
+
+.chefs .container .cards .one-card span
+{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(127, 127, 144)
+    ;
+}
+
+.chefs .container .cards .one-card p
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(127, 127, 144);
+}
+
+.chefs .container .cards .one-card .icon-card
+{
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    z-index: 1;
+    left : 100%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.5s 0.5s;
+}
+
+.chefs .container .cards .one-card .icon-card a
+{
+    color: gray;
+    padding: 10px 0;
+    transition: all 0.2s;
+}
+
+.chefs .container .cards .one-card .icon-card a:hover
+{
+    color: black;
+}
+
+
+.chefs .container .cards .one-card:hover
+{
+    transform: scale(1.07);
+}
+.chefs .container .cards .one-card:hover .icon-card
+{
+    left : 83%;
+}
+.chefs .container .cards .one-card h3
+{
+    margin-bottom: 5px;
+}
+.chefs .container .cards .one-card *
+{
+    text-align: center;
+}
+
+.chefs .container .cards .one-card img
+{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+/* =======================End of chefs section==============================*/
+
+
+/* =======================Start of gallery section============================*/
+
+.gallery
+{
+    background-color: rgb(238,238,238);
+}
+
+.gallery .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .container h5
+{
+    text-align: center;
+    margin: 10px 0;
+    margin-top: 80px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(127, 127, 144);
+}
+
+.gallery .container h3
+{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(33, 37, 41)  ;
+}
+
+.gallery .container h3 span
+{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--main-color)  ;
+}
+
+.gallery .container .gallery-images
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+
+.gallery .container .gallery-images div
+{
+    width: 30%;
+}
+.gallery .container .gallery-images div .one-image 
+{
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+}
+
+.gallery .container .gallery-images div .one-image .layer
+{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.gallery .container .gallery-images div .one-image:hover .layer
+{
+    height: 100%;
+}
+
+.gallery .container .gallery-images div .one-image .layer h3
+{
+    margin: 0;
+}
+
+.gallery .container .gallery-images div .one-image .layer p
+{
+    margin: 0;
+    text-align: center;
+}
+
+.gallery .container .gallery-images div .one-image img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .container .gallery-images  .layer h3
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    margin: 0 0;
+}
+
+.gallery .container .gallery-images .layer p
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(221, 221, 221)
+    ;
+    margin: 0 0;
+}
+
+/* =======================End of gallery section==========================*/
+
+/* =======================start of contact section=============================*/
+
+.contact .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .container h5
+{
+    text-align: center;
+    margin: 10px 0;
+    margin-top: 80px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(127, 127, 144);
+}
+
+.contact .container h3
+{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(33, 37, 41)  ;
+}
+
+.contact .container h3 span
+{
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--main-color)  ;
+}
+
+/*.contact .container .h3
+{
+    text-align: center;
+    margin: 0;
+}
+
+.contact .container .h5
+{
+    text-align: center;
+    margin: 0;
+}
+*/
+.contact .container iframe
+{
+    width: 100%;
+}
+
+.contact .container .contact-icons
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact .container .form 
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .container .form input
+{
+    margin: 10px 0;
+    border: 2px solid rgb(232,227,227);
+    transition: all 0.3s;
+}
+
+.contact .container .form input:focus
+{
+    border-color: #ce1212;
+    outline: none;
+}
+
+.contact .container .form .one
+{
+    width: 48%;
+    padding: 20px;
+}
+
+.contact .container .form  .two
+{
+    width: 48%;
+    padding: 20px;
+
+}
+
+.contact .container .form .three
+{
+    width: 100%;
+    padding: 20px;
+}
+
+.contact .container .form .four
+{
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px solid rgb(232,227,227);
+    transition: all 0.3s;
+}
+.contact .container .form div
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .container .form div .btn
+{
+    padding: 15px 40px;
+    border-radius: 100vh;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: white;
+    transition: all 0.3s;
+    margin: 20px 0;
+}
+
+.contact .container .form div .btn:hover
+{
+    background-color: red;
+}
+
+.contact .container .form .four:focus
+{
+    border-color: #ce1212;
+    outline: none;
+}
+
+.contact .container .contact-icons div
+{
+    width: 49%;
+    background-color: rgb(245,245,245);
+    display: flex;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contact .container .contact-icons div .icon
+{
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.contact .container .contact-icons div .icon i
+{
+    font-size: 18px;
+}
+
+.contact .container .contact-icons div .info
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.contact .container .contact-icons div .info h3
+{
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: rgb(125, 125, 125)
+    ;
+}
+
+.contact .container .contact-icons div .info p
+{
+    margin: 0;
+    color: rgb(33, 37, 41)  ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+
+}
+
+.contact .container .contact-icons div .info p a
+{
+    color: rgb(33, 37, 41)  ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.contact .container .contact-icons div .info p span
+{
+    font-weight: bold;
+}
+
+/* ==============================End of contact section=======================*/
+
+/* ==============================start of footer section=======================*/
+
+.footer
+{
+   background-color: black;
+}
+
+.footer .container
+{
+    display: flex;
+}
+
+
+.footer .container div
+{
+    width: calc(100%/4);
+
+}
+
+.footer .container .media 
+{
+    background-color: black;
+    color: white;
+    padding: 10px 13px;
+}
+
+.footer .container .media img
+{
+    width: 13%;
+    height: 13%;
+    margin-right: 5px;
+}
+
+.footer .container .media .pic-and-h2
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.footer .container h2
+{
+    color: white;
+    font-size:30px ;
+    font-weight: 700;
+    position: relative;
+}
+
+
+.footer .container h2::after
+{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    bottom: 25%;
+    left  :103%
+    
+}
+
+.footer .container .media p
+{
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.footer .container .media .social
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .container .media .social .footer-icons
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.footer .container .media .social .footer-icons i
+{
+    font-size: 24px;
+    color: white;
+}
+
+.footer .container .media .social h3
+{
+    text-align: center;
+    position: relative;
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.footer .container .media .social h3::after
+{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+    position: absolute;
+    top: 140%;
+    left: 0;
+}
+
+.footer .container .contacts
+{
+    background-color: black;
+    color: white;
+    padding: 10px 13px;
+    order: 1;
+}
+
+.footer .container .contacts h3
+{
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+
+.footer .container .contacts .all 
+{
+    width: 100%;
+}
+
+.footer .container .contacts a
+{
+    color: white;
+}
+
+.footer .container .contacts .all div
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.footer .container .contacts .all div i
+{
+    margin-right: 10px;
+    color: var(--main-color);
+    font-size: 22px;
+}
+
+.footer .container .contacts .all div p
+{
+    font-family: "Open Sans", sans-serif;
+
+}
+
+
+
+
+.footer .container .links
+{
+    width: 50% ;
+    background-color: black;
+    color: white;
+    padding: 10px 13px;
+}
+
+.footer .container .links .first-half
+{
+    width: 100%;
+}
+.footer .container .links .first-half h3
+{
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.footer .container .links .first-half> p
+{
+    font-family: "Open Sans", sans-serif;
+
+}
+
+
+
+
+.footer .container .links .first-half form
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .links .first-half form .inp
+{
+    padding: 10px;
+    width: 80%;
+   
+}
+
+.footer .container .links .first-half form .btn2
+{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+    transition: all 0.3s;
+}
+
+.footer .container .links .first-half form .btn2:hover
+{
+    background-color: red;
+}
+
+.footer .container .links .second-half
+{
+    width: 100%;
+}
+
+.footer .container .links .second-half .quick-links
+{
+    width: 100%;
+    display: flex;
+}
+
+.footer .container .links .second-half .quick-links .first-three
+{
+    width: 50%;
+}
+
+.footer .container .links .second-half .quick-links .second-three
+{
+    width: 50%;
+}
+
+.footer .container .links .second-half .quick-links .first-three div
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .container .links .second-half .quick-links .first-three div:hover
+{
+    background-color: gray;
+    margin-left: 5px;
+}
+
+.footer .container .links .second-half .quick-links .second-three div
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s;
+    padding: 0;
+    margin: 0;
+}
+.footer .container .links .second-half .quick-links .second-three div:hover
+{
+    background-color: gray;
+    margin-left: 7px;
+}
+
+.footer .container .links .second-half .quick-links  div i
+{
+    margin-right: 8px;
+}
+
+.footer .container .links .second-half .quick-links  div h3
+{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    margin: 5px 0;
+}

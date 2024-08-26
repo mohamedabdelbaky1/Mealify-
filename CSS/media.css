@@ -1,0 +1,260 @@
+@media screen and (max-width:1200px)
+{
+    nav .container .fa-bars
+{
+    display: block;
+}
+nav .container .ul
+{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: white;
+    position: absolute;
+    top : 0;
+    right : 0;
+    height: 100vh;
+    padding: 40px 20px;
+    width: 350px;
+    transform: translateX(100%);
+    transition: all 0.3s;
+}
+nav .container .ul:target
+{
+    transform: translateX(0);
+}
+nav .container .close
+{
+    display: block;
+    font-size: 25px;
+    margin-left: auto;
+    position: absolute;
+    top : 0;
+    right: 0;
+}
+nav .container .close:hover i 
+{
+    color: black;
+}
+
+nav .container .close i
+{
+    color: gray;
+}
+
+
+nav .container .icons
+{
+    display: flex;
+}
+nav .container .icons .fa-moon
+{
+    margin-right: 20px;
+}
+
+.header .container
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.header .container .caption
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .container .caption *
+{
+    text-align: center;
+}
+
+.header .container .image
+{
+    width: 100%;
+}
+
+
+.chefs .container .cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.chefs .container .cards .one-card
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+    transition: all 0.5s;
+    position: relative;
+    position: relative;
+    overflow: hidden;
+    width: 47%;
+}
+
+.gallery .container .gallery-images div
+{
+    width: 100%;
+}
+
+
+
+}
+
+
+@media screen and (max-width:992px)
+{
+
+    .footer .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .footer .container .contacts
+{
+    background-color: black;
+    color: white;
+    padding: 10px 13px;
+}
+
+.footer .container div
+{
+    width: calc(100%/2);
+
+}
+
+.footer .container .links
+{
+    width: 100%;
+    order: 1;
+}
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width:768px)
+{
+    .chefs .container .cards
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+
+.chefs .container .cards .one-card
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+    transition: all 0.5s;
+    position: relative;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+}
+
+
+.contact .container .form 
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .container .form .one
+{
+    width: 100%;
+}
+
+.contact .container .form .two
+{
+    width: 100%;
+}
+.contact .container .form .three
+{
+    width: 100%;
+}
+
+.contact .container .form .four
+{
+    width: 100%;
+}
+
+
+.contact .container .contact-icons
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact .container .contact-icons>div
+{
+    width: 100%;
+}
+
+
+
+.footer .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .footer .container .contacts
+{
+    background-color: black;
+    color: white;
+    padding: 10px 13px;
+}
+
+.footer .container div
+{
+    width: 100%;
+
+}
+
+.footer .container .contacts
+{
+    order: 1;
+}
+
+.footer .container .links
+{
+    order: 0;
+}
+
+
+
+
+
+
+}
+
+
